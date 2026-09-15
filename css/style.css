@@ -1,0 +1,114 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf8f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7e0d8;
+}
+
+.cabecalho .container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #704f3a;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu a {
+    color: #444;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    color: #a56f4f;
+}
+
+
+/* INÍCIO */
+
+.inicio {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f3ece4;
+}
+
+.inicio-conteudo {
+    max-width: 750px;
+    text-align: center;
+}
+
+.inicio-conteudo h1 {
+    margin-bottom: 20px;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: #704f3a;
+}
+
+.inicio-conteudo p {
+    max-width: 600px;
+    margin: 0 auto 32px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #665d57;
+}
+
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #704f3a;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background-color: #8a6248;
+    transform: translateY(-2px);
+}
