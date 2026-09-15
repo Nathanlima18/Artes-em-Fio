@@ -450,3 +450,238 @@ body {
     transform: translateY(-3px);
     background-color: #f3ece4;
 }
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    background-color: #3f3028;
+    color: #ffffff;
+}
+
+.rodape-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.rodape-marca .logo {
+    color: #ffffff;
+}
+
+.rodape-marca p {
+    margin-top: 8px;
+
+    color: #cfc3bb;
+    font-size: 0.9rem;
+}
+
+.rodape-menu {
+    display: flex;
+    gap: 28px;
+}
+
+.rodape-menu a {
+    color: #e8ded8;
+
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    transition: color 0.2s;
+}
+
+.rodape-menu a:hover {
+    color: #ffffff;
+}
+
+.rodape-final {
+    padding: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    text-align: center;
+}
+
+.rodape-final p {
+    color: #aa9d95;
+    font-size: 0.8rem;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* =========================
+       GERAL
+    ========================= */
+
+    .container {
+        width: 88%;
+    }
+
+
+    /* =========================
+       CABEÇALHO
+    ========================= */
+
+    .cabecalho .container {
+        height: 70px;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+
+    /* Temporariamente escondemos o menu.
+       Depois criaremos o menu hambúrguer. */
+
+    .cabecalho .menu {
+        display: none;
+    }
+
+
+    /* =========================
+       BANNER
+    ========================= */
+
+    .inicio {
+        min-height: calc(100vh - 70px);
+
+        padding: 70px 20px;
+
+        flex-direction: column;
+    }
+
+    .inicio-conteudo {
+        max-width: 500px;
+    }
+
+    .inicio-conteudo h1 {
+        font-size: 2.8rem;
+    }
+
+    .inicio-conteudo p {
+        font-size: 1rem;
+    }
+
+
+    /* No celular vamos deixar apenas
+       duas fotos decorativas */
+
+    .foto-decorativa {
+        width: 190px;
+        height: 150px;
+    }
+
+    .foto-1 {
+        top: 4%;
+        left: -70px;
+    }
+
+    .foto-2 {
+        display: none;
+    }
+
+    .foto-3 {
+        top: auto;
+        bottom: 4%;
+        right: -70px;
+    }
+
+    .foto-4 {
+        display: none;
+    }
+
+
+    /* =========================
+       TRABALHOS
+    ========================= */
+
+    .trabalhos {
+        padding: 75px 0;
+    }
+
+    .titulo-secao {
+        margin-bottom: 40px;
+    }
+
+    .titulo-secao h2 {
+        font-size: 2rem;
+    }
+
+
+    /* =========================
+       CARROSSEL
+       1 PRODUTO POR VEZ
+    ========================= */
+
+    .carrossel-trilho {
+        gap: 0;
+    }
+
+    .card-trabalho {
+        flex: 0 0 100%;
+    }
+
+    .card-imagem {
+        height: 350px;
+    }
+
+
+    /* SETAS */
+
+    .carrossel-seta {
+        width: 45px;
+        height: 60px;
+
+        font-size: 1.5rem;
+    }
+
+    .carrossel-seta.anterior {
+        left: -15px;
+    }
+
+    .carrossel-seta.proximo {
+        right: -15px;
+    }
+
+
+    /* =========================
+       CONTATO
+    ========================= */
+
+    .contato {
+        padding: 80px 20px;
+    }
+
+    .contato-conteudo h2 {
+        font-size: 2rem;
+    }
+
+    .contato-conteudo p {
+        font-size: 1rem;
+    }
+
+
+    /* =========================
+       RODAPÉ
+    ========================= */
+
+    .rodape-conteudo {
+        flex-direction: column;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .rodape-menu {
+        justify-content: center;
+    }
+}
